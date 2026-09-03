@@ -14,14 +14,11 @@ import {
     SheetTrigger
 } from "@/components/ui/sheet";
 import { cn, NAV_LINKS } from "@/utils";
-import { useAuth } from "@clerk/nextjs";
 import { LucideIcon, Menu, X } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const MobileNavbar = () => {
-
-    const { isSignedIn, signOut } = useAuth();
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -37,28 +34,17 @@ const MobileNavbar = () => {
                         <Menu className="w-5 h-5" />
                     </Button>
                 </SheetTrigger>
-                <SheetContent className="w-screen">
-                    <SheetClose asChild className="absolute top-3 right-5 bg-background z-20 flex items-center justify-center">
+                <SheetContent side="left" className="w-screen">
+                    <SheetClose asChild className="absolute top-3 end-5 bg-background z-20 flex items-center justify-center">
                         <Button size="icon" variant="ghost" className="text-neutral-600">
                             <X className="w-5 h-5" />
                         </Button>
                     </SheetClose>
                     <div className="flex flex-col items-start w-full py-2 mt-10">
-                        <div className="flex items-center justify-evenly w-full space-x-2">
-                            {isSignedIn ? (
-                                <Link href="/dashboard" className={buttonVariants({ variant: "outline", className: "w-full" })}>
-                                    Dashboard
-                                </Link>
-                            ) : (
-                                <>
-                                    <Link href="/auth/sign-in" className={buttonVariants({ variant: "outline", className: "w-full" })}>
-                                        Sign In
-                                    </Link>
-                                    <Link href="/auth/sign-up" className={buttonVariants({ className: "w-full" })}>
-                                        Sign Up
-                                    </Link>
-                                </>
-                            )}
+                        <div className="flex items-center justify-evenly w-full gap-2">
+                            <Link href="/pricing" className={buttonVariants({ className: "w-full" })}>
+                                شروع
+                            </Link>
                         </div>
                         <ul className="flex flex-col items-start w-full mt-6">
                             <Accordion type="single" collapsible className="!w-full">
@@ -72,9 +58,7 @@ const MobileNavbar = () => {
                                                 <AccordionContent>
                                                     <ul
                                                         onClick={handleClose}
-                                                        className={cn(
-                                                            "w-full",
-                                                        )}
+                                                        className="w-full"
                                                     >
                                                         {link.menu.map((menuItem) => (
                                                             <ListItem key={menuItem.title} title={menuItem.title} href={menuItem.href} icon={menuItem.icon}>
@@ -119,7 +103,7 @@ const ListItem = React.forwardRef<
                 )}
                 {...props}
             >
-                <div className="flex items-center space-x-2 text-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                     <Icon className="h-4 w-4" />
                     <h6 className="text-sm !leading-none">
                         {title}

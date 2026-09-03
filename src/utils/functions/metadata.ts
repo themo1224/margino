@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} - The Link Management Platform for Businesses`,
-    description = `${process.env.NEXT_PUBLIC_APP_NAME} is the link management platform for businesses. It helps you build, brand, and track your links.`,
+    title = "مارجینو — بفهمید ضرر می‌دهید یا از رقبا گران‌ترید",
+    description = "بدانید الان ضرر می‌دهید یا از رقبا گران‌ترید؛ بعد از روی هزینه‌های واقعی‌تان یک قیمت امن بگیرید.",
     image = "/thumbnail.png",
     icons = [
         {
@@ -41,8 +41,6 @@ export const generateMetadata = ({
         title,
         description,
         ...(image && { card: "summary_large_image", images: [image] }),
-        creator: "@shreyassihasane",
     },
-    // metadataBase: new URL(process.env.APP_DOMAIN!),
     ...(noIndex && { robots: { index: false, follow: false } }),
 });

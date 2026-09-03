@@ -1,4 +1,4 @@
-import { Inter, DM_Sans } from "next/font/google";
+import { Inter, Vazirmatn } from "next/font/google";
 import localFont from "next/font/local";
 
 export const aeonik = localFont({
@@ -30,4 +30,9 @@ export const aeonik = localFont({
 export const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",
+});
+
+export const vazirmatn = Vazirmatn({
+    subsets: ["latin", "arabic"],
+    variable: "--font-vazirmatn",
 });

@@ -10,18 +10,15 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { cn, NAV_LINKS } from "@/utils";
-import { useClerk } from "@clerk/nextjs";
+import { APP_NAME, cn, NAV_LINKS } from "@/utils";
 import { LucideIcon, ZapIcon } from "lucide-react";
 import Link from "next/link";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import AnimationContainer from "../global/animation-container";
 import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
-import AnimationContainer from "../global/animation-container";
 
 const Navbar = () => {
-
-    const { user } = useClerk();
 
     const [scroll, setScroll] = useState(false);
 
@@ -47,10 +44,10 @@ const Navbar = () => {
         )}>
             <AnimationContainer reverse delay={0.1} className="size-full">
                 <MaxWidthWrapper className="flex items-center justify-between">
-                    <div className="flex items-center space-x-12">
+                    <div className="flex items-center gap-12">
                         <Link href="/#home">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                Linkify
+                                {APP_NAME}
                             </span>
                         </Link>
 
@@ -64,21 +61,21 @@ const Navbar = () => {
                                                 <NavigationMenuContent>
                                                     <ul className={cn(
                                                         "grid gap-1 p-4 md:w-[400px] lg:w-[500px] rounded-xl",
-                                                        link.title === "Features" ? "lg:grid-cols-[.75fr_1fr]" : "lg:grid-cols-2"
+                                                        link.title === "قابلیت‌ها" ? "lg:grid-cols-[.75fr_1fr]" : "lg:grid-cols-2"
                                                     )}>
-                                                        {link.title === "Features" && (
-                                                            <li className="row-span-4 pr-2 relative rounded-lg overflow-hidden">
+                                                        {link.title === "قابلیت‌ها" && (
+                                                            <li className="row-span-4 pe-2 relative rounded-lg overflow-hidden">
                                                                 <div className="absolute inset-0 !z-10 h-full w-[calc(100%-10px)] bg-[linear-gradient(to_right,rgb(38,38,38,0.5)_1px,transparent_1px),linear-gradient(to_bottom,rgb(38,38,38,0.5)_1px,transparent_1px)] bg-[size:1rem_1rem]"></div>
                                                                 <NavigationMenuLink asChild className="z-20 relative">
                                                                     <Link
-                                                                        href="/"
+                                                                        href="/features"
                                                                         className="flex h-full w-full select-none flex-col justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                                                                     >
                                                                         <h6 className="mb-2 mt-4 text-lg font-medium">
-                                                                            All Features
+                                                                            همه قابلیت‌ها
                                                                         </h6>
                                                                         <p className="text-sm leading-tight text-muted-foreground">
-                                                                            Manage links, track performance, and more.
+                                                                            هزینه واقعی، قیمت رقبا، و قیمت امن.
                                                                         </p>
                                                                     </Link>
                                                                 </NavigationMenuLink>
@@ -112,23 +109,10 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden lg:flex items-center">
-                        {user ? (
-                            <div className="flex items-center">
-                                <Link href="/dashboard" className={buttonVariants({ size: "sm", })}>
-                                    Dashboard
-                                </Link>
-                            </div>
-                        ) : (
-                            <div className="flex items-center gap-x-4">
-                                <Link href="/auth/sign-in" className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                                    Sign In
-                                </Link>
-                                <Link href="/auth/sign-up" className={buttonVariants({ size: "sm", })}>
-                                    Get Started
-                                    <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
-                                </Link>
-                            </div>
-                        )}
+                        <Link href="/pricing" className={buttonVariants({ size: "sm", })}>
+                            شروع
+                            <ZapIcon className="size-3.5 ms-1.5 text-orange-500 fill-orange-500" />
+                        </Link>
                     </div>
 
                     <MobileNavbar />
@@ -155,7 +139,7 @@ const ListItem = React.forwardRef<
                     )}
                     {...props}
                 >
-                    <div className="flex items-center space-x-2 text-neutral-300">
+                    <div className="flex items-center gap-2 text-neutral-300">
                         <Icon className="h-4 w-4" />
                         <h6 className="text-sm font-medium !leading-none">
                             {title}

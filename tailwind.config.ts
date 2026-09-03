@@ -71,8 +71,8 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        "heading": ["var(--font-aeonik)"],
-        "default": ["var(--font-inter)"],
+        "heading": ["var(--font-vazirmatn)", "var(--font-aeonik)"],
+        "default": ["var(--font-vazirmatn)", "var(--font-inter)"],
       },
       keyframes: {
         "accordion-down": {

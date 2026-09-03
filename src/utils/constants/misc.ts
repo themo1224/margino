@@ -6,138 +6,138 @@ export const PAGINATION_LIMIT = 10;
 
 export const COMPANIES = [
     {
-        name: "Asana",
+        name: "عطر سرای نسترن",
         logo: "/assets/company-01.svg",
     },
     {
-        name: "Tidal",
+        name: "نقره سیمین",
         logo: "/assets/company-02.svg",
     },
     {
-        name: "Innovaccer",
+        name: "فروشگاه رزگلد",
         logo: "/assets/company-03.svg",
     },
     {
-        name: "Linear",
+        name: "گالری نقره‌کار",
         logo: "/assets/company-04.svg",
     },
     {
-        name: "Raycast",
+        name: "عطریات پارس",
         logo: "/assets/company-05.svg",
     },
     {
-        name: "Labelbox",
+        name: "زیورآلات مهتاب",
         logo: "/assets/company-06.svg",
     }
 ] as const;
 
 export const PROCESS = [
     {
-        title: "Organize Your Links",
-        description: "Efficiently categorize and tag your links for quick access and easy management.",
+        title: "پروفایل هزینه بسازید",
+        description: "هزینه کامل کالا را ثبت کنید: خرید، دلار، اجاره، نیرو و بقیه سربار — تا کف قیمت معلوم باشد.",
         icon: FolderOpenIcon,
     },
     {
-        title: "Shorten and Customize",
-        description: "Create concise, branded links that are easy to share and track.",
+        title: "قیمت پیشنهادی امن بگیرید",
+        description: "از پروفایل هزینه به‌علاوه قیمت زنده رقبا، یک قیمت پیشنهادی می‌گیرید که هیچ‌وقت زیر هزینه به‌علاوه حاشیه نمی‌رود.",
         icon: WandSparklesIcon,
     },
     {
-        title: "Analyze and Optimize",
-        description: "Gain insights into link performance and optimize for better engagement.",
+        title: "روی هشدار رقبا اقدام کنید",
+        description: "وقتی روی ترب، دیجی‌کالا یا باسلام از رقبا گران‌تر نشسته‌اید و فروش از دست می‌رود، بفهمید و قیمت را عوض کنید.",
         icon: BarChart3Icon,
     },
 ] as const;
 
 export const FEATURES = [
     {
-        title: "Link shortening",
-        description: "Create short links that are easy to remember and share.",
+        title: "موتور هزینه و قیمت",
+        description: "پروفایل هزینه، کف قیمت، و قیمت پیشنهادی امن.",
     },
     {
-        title: "Advanced analytics",
-        description: "Track and measure the performance of your links.",
+        title: "قیمت رقبا",
+        description: "قیمت زنده رقبا از ترب/اسنپ و آگهی‌های دیجی‌کالا/باسلام.",
     },
     {
-        title: "Password protection",
-        description: "Secure your links with a password.",
+        title: "ووکامرس",
+        description: "افزونه وردپرس فقط برای فروشندگان ووکامرس، به‌عنوان رابط.",
     },
     {
-        title: "Custom QR codes",
-        description: "Generate custom QR codes for your links.",
+        title: "اینستاگرام و API",
+        description: "به‌زودی؛ هنوز آماده نیستند.",
     },
     {
-        title: "Link expiration",
-        description: "Set an expiration date for your links.",
+        title: "کف قیمت",
+        description: "قیمت پیشنهادی هیچ‌وقت زیر هزینه به‌علاوه حاشیه نمی‌رود.",
     },
     {
-        title: "Team collaboration",
-        description: "Share links with your team and collaborate in real-time.",
+        title: "اقدام روی هشدار",
+        description: "وقتی از رقبا گران‌ترید، بفهمید و قیمت را عوض کنید.",
     },
 ] as const;
 
 export const REVIEWS = [
     {
-        name: "Michael Smith",
-        username: "@michaelsmith",
+        name: "رضا محمدی",
+        username: "عطر فروشی",
         avatar: "https://randomuser.me/api/portraits/men/1.jpg",
         rating: 5,
-        review: "This tool is a lifesaver! Managing and tracking my links has never been easier. A must-have for anyone dealing with numerous links."
+        review: "قیمت خرید عطر با دلار بالا می‌رود و من هنوز با قیمت قدیمی می‌فروختم. حالا از هزینه واقعی می‌فهمم کی دارم ضرر می‌دهم."
     },
     {
-        name: "Emily Johnson",
-        username: "@emilyjohnson",
+        name: "سارا احمدی",
+        username: "نقره و زیورآلات",
         avatar: "https://randomuser.me/api/portraits/women/1.jpg",
         rating: 4,
-        review: "Very useful app! It has streamlined my workflow considerably. A few minor bugs, but overall a great experience."
+        review: "روی ترب از رقبا گران‌تر بودم و فروش کم شده بود. تا خودم دستی چک نمی‌کردم، خبر نداشتم."
     },
     {
-        name: "Daniel Williams",
-        username: "@danielwilliams",
+        name: "امیر حسینی",
+        username: "خرید و فروش عطر",
         avatar: "https://randomuser.me/api/portraits/men/2.jpg",
         rating: 5,
-        review: "I've been using this app daily for months. The insights and analytics it provides are invaluable. Highly recommend it!"
+        review: "اجاره و نیرو را هیچ‌وقت در قیمت کالا حساب نمی‌کردم. پروفایل هزینه همان چیزی است که کم داشتم."
     },
     {
-        name: "Sophia Brown",
-        username: "@sophiabrown",
+        name: "نرگس رضایی",
+        username: "گالری نقره",
         avatar: "https://randomuser.me/api/portraits/women/2.jpg",
         rating: 4,
-        review: "This app is fantastic! It offers everything I need to manage my links efficiently."
+        review: "قیمت پیشنهادی زیر هزینه به‌علاوه حاشیه نمی‌رود. دیگر از ترس ضرر، چشم‌بسته ارزان نمی‌فروشم."
     },
     {
-        name: "James Taylor",
-        username: "@jamestaylor",
+        name: "حسین کریمی",
+        username: "فروشگاه عطر",
         avatar: "https://randomuser.me/api/portraits/men/3.jpg",
         rating: 5,
-        review: "Absolutely love this app! It's intuitive and feature-rich. Has significantly improved how I manage and track links."
+        review: "دیجی‌کالا و باسلام را به‌عنوان رقیب می‌بینم، نه جایی که بخواهم فروشگاه‌شان را مدیریت کنم. همان قیمت آگهی‌ها برایم کافی است."
     },
     {
-        name: "Olivia Martinez",
-        username: "@oliviamartinez",
+        name: "مینا صادقی",
+        username: "زیورآلات نقره",
         avatar: "https://randomuser.me/api/portraits/women/3.jpg",
         rating: 4,
-        review: "Great app with a lot of potential. It has already saved me a lot of time. Looking forward to future updates and improvements."
+        review: "صدها کالا را دستی با ترب و اسنپ مقایسه نمی‌توانم. بدون قیمت رقبا نمی‌فهمم کی گران نشسته‌ام."
     },
     {
-        name: "William Garcia",
-        username: "@williamgarcia",
+        name: "علی مرادی",
+        username: "عمده عطر",
         avatar: "https://randomuser.me/api/portraits/men/4.jpg",
         rating: 5,
-        review: "This app is a game-changer for link management. It's easy to use, extremely powerful and highly recommended!"
+        review: "فروشگاه ووکامرس دارم؛ افزونه فقط رابط است. محصول برای قیمت‌گذاری است، نه اینکه شرکت افزونه باشد."
     },
     {
-        name: "Mia Rodriguez",
-        username: "@miarodriguez",
+        name: "فاطمه نوری",
+        username: "خرید و فروش زیورآلات",
         avatar: "https://randomuser.me/api/portraits/women/4.jpg",
         rating: 4,
-        review: "I've tried several link management tools, but this one stands out. It's simple, effective."
+        review: "وقتی هزینه بالا می‌رود و قیمت روی سایت کهنه می‌ماند، ضرر پنهان است. همین را می‌خواستم ببینم."
     },
     {
-        name: "Henry Lee",
-        username: "@henrylee",
+        name: "مهدی جعفری",
+        username: "عطریات",
         avatar: "https://randomuser.me/api/portraits/men/5.jpg",
         rating: 5,
-        review: "This app has transformed my workflow. Managing and analyzing links is now a breeze. I can't imagine working without it."
+        review: "بعد از قیمت پیشنهادی، روی هشدار رقبا قیمت را عوض کردم. دیگر بالای بازار نمی‌مانم بی‌خبر."
     },
 ] as const;

@@ -1,64 +1,64 @@
-import { HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, NewspaperIcon, QrCodeIcon } from "lucide-react";
+import { HelpCircleIcon, LineChartIcon, NewspaperIcon, PlugIcon, ShieldIcon, WalletIcon } from "lucide-react";
 
 export const NAV_LINKS = [
     {
-        title: "Features",
+        title: "قابلیت‌ها",
         href: "/features",
         menu: [
             {
-                title: "Link Shortening",
-                tagline: "Shorten links and track their performance.",
+                title: "موتور هزینه و قیمت",
+                tagline: "پروفایل هزینه، کف قیمت، و قیمت پیشنهادی امن.",
                 href: "/features/link-shortening",
-                icon: Link2Icon,
+                icon: WalletIcon,
             },
             {
-                title: "Password Protection",
-                tagline: "Secure your links with a password.",
-                href: "/features/password-protection",
-                icon: LockIcon,
-            },
-            {
-                title: "Advanced Analytics",
-                tagline: "Gain insights into who is clicking your links.",
+                title: "قیمت رقبا",
+                tagline: "ترب، اسنپ، دیجی‌کالا و باسلام به‌عنوان رقیب.",
                 href: "/features/analytics",
                 icon: LineChartIcon,
             },
             {
-                title: "Custom QR Codes",
-                tagline: "Use QR codes to reach your audience.",
+                title: "کف قیمت امن",
+                tagline: "هیچ‌وقت زیر هزینه به‌علاوه حاشیه.",
+                href: "/features/password-protection",
+                icon: ShieldIcon,
+            },
+            {
+                title: "ووکامرس",
+                tagline: "افزونه فقط رابط است. اینستاگرام و API به‌زودی.",
                 href: "/features/qr-codes",
-                icon: QrCodeIcon,
+                icon: PlugIcon,
             },
         ],
     },
     {
-        title: "Pricing",
+        title: "قیمت‌ها",
         href: "/pricing",
     },
     {
-        title: "Enterprise",
+        title: "سازمانی",
         href: "/enterprise",
     },
     {
-        title: "Resources",
-        href: "/resources",
+        title: "منابع",
+        href: "/resources/blog",
         menu: [
             {
-                title: "Blog",
-                tagline: "Read articles on the latest trends in tech.",
+                title: "وبلاگ",
+                tagline: "یادداشت‌هایی برای فروشگاه‌های خرید و فروش مجدد.",
                 href: "/resources/blog",
                 icon: NewspaperIcon,
             },
             {
-                title: "Help",
-                tagline: "Get answers to your questions.",
+                title: "راهنما",
+                tagline: "جواب سوال‌های رایج درباره مارجینو.",
                 href: "/resources/help",
                 icon: HelpCircleIcon,
             },
         ]
     },
     {
-        title: "Changelog",
+        title: "تغییرات",
         href: "/changelog",
     },
 ];

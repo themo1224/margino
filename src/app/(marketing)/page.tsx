@@ -8,15 +8,11 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import { currentUser } from "@clerk/nextjs/server";
-import { ArrowRightIcon, CreditCardIcon, StarIcon } from "lucide-react";
+import { ArrowLeftIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const HomePage = async () => {
-
-    const user = await currentUser();
-
+const HomePage = () => {
     return (
         <div className="overflow-x-hidden scrollbar-hide size-full">
             {/* Hero Section */}
@@ -30,25 +26,26 @@ const HomePage = async () => {
                             <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
                             <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/20"></span>
                             <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1">
-                                ✨ Manage links smarter
-                                <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                                قیمت امن از هزینه واقعی
+                                <ArrowLeftIcon className="ms-1 size-3 transition-transform duration-300 ease-in-out group-hover:-translate-x-0.5" />
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Smart Links with <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                Precision
+                            بفهمید ضرر می‌دهید یا از رقبا{" "}
+                            <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
+                                گران‌ترید
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                            Effortlessly streamline your link management with Linkify.
+                            بدانید الان ضرر می‌دهید یا از رقبا گران‌ترید؛
                             <br className="hidden md:block" />
-                            <span className="hidden md:block">Shorten, track, and organize all your links in one place.</span>
+                            <span className="hidden md:block">بعد از روی هزینه‌های واقعی‌تان یک قیمت امن بگیرید.</span>
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
-                                <Link href={user ? "/dashboard" : "/auth/sign-in"} className="flex items-center">
-                                    Start creating for free
-                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                <Link href="/pricing" className="flex items-center">
+                                    شروع
+                                    <ArrowLeftIcon className="w-4 h-4 ms-2" />
                                 </Link>
                             </Button>
                         </div>
@@ -64,7 +61,7 @@ const HomePage = async () => {
                             />
                             <Image
                                 src="/assets/dashboard-dark.svg"
-                                alt="Dashboard"
+                                alt="نمای محصول"
                                 width={1200}
                                 height={1200}
                                 quality={100}
@@ -83,7 +80,7 @@ const HomePage = async () => {
                     <div className="py-14">
                         <div className="mx-auto px-4 md:px-8">
                             <h2 className="text-center text-sm font-medium font-heading text-neutral-400 uppercase">
-                                Trusted by the best in the industry
+                                برای فروشگاه‌های خرید و فروش مجدد
                             </h2>
                             <div className="mt-8">
                                 <ul className="flex flex-wrap items-center gap-x-6 gap-y-6 md:gap-x-16 justify-center">
@@ -110,12 +107,12 @@ const HomePage = async () => {
             <MaxWidthWrapper className="pt-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col w-full items-center lg:items-center justify-center py-8">
-                        <MagicBadge title="Features" />
+                        <MagicBadge title="مسیر محصول" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Manage Links Like a Pro
+                            هزینه کامل، قیمت رقبا، قیمت امن
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Linkify is a powerful link management tool that helps you shorten, track, and organize all your links in one place.
+                            پروفایل هزینه به‌علاوه قیمت زنده رقبا می‌شود یک قیمت پیشنهادی امن — هیچ‌وقت زیر هزینه به‌علاوه حاشیه. جواب همان‌جا که می‌فروشید می‌رسد.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -132,12 +129,12 @@ const HomePage = async () => {
             <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
-                        <MagicBadge title="The Process" />
+                        <MagicBadge title="روش کار" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Effortless link management in 3 steps
+                            سه قدم تا قیمتی که کور نیست
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Follow these simple steps to optimize, organize, and share your links with ease.
+                            هزینه را کامل ببینید، قیمت پیشنهادی امن بگیرید، روی هشدار رقبا اقدام کنید.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -148,7 +145,7 @@ const HomePage = async () => {
                                 <div className="flex flex-col items-start justify-center w-full">
                                     <process.icon strokeWidth={1.5} className="w-10 h-10 text-foreground" />
                                     <div className="flex flex-col relative items-start">
-                                        <span className="absolute -top-6 right-0 border-2 border-border text-foreground font-medium text-2xl rounded-full w-12 h-12 flex items-center justify-center pt-0.5">
+                                        <span className="absolute -top-6 end-0 border-2 border-border text-foreground font-medium text-2xl rounded-full w-12 h-12 flex items-center justify-center pt-0.5">
                                             {id + 1}
                                         </span>
                                         <h3 className="text-base mt-6 font-medium text-foreground">
@@ -169,27 +166,17 @@ const HomePage = async () => {
             <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
-                        <MagicBadge title="Simple Pricing" />
+                        <MagicBadge title="قیمت‌ها" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Choose a plan that works for you
+                            خرید از سایت، ژاکت و RTL
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Get started with Linkify today and enjoy more features with our pro plans.
+                            محصول را همین‌جا و از ژاکت و RTL برای کاربران وردپرس می‌فروشیم. جزئیات پلن‌ها به‌زودی.
                         </p>
                     </div>
                 </AnimationContainer>
                 <AnimationContainer delay={0.2}>
                     <PricingCards />
-                </AnimationContainer>
-                <AnimationContainer delay={0.3}>
-                    <div className="flex flex-wrap items-start md:items-center justify-center lg:justify-evenly gap-6 mt-12 max-w-5xl mx-auto w-full">
-                        <div className="flex items-center gap-2">
-                            <CreditCardIcon className="w-5 h-5 text-foreground" />
-                            <span className="text-muted-foreground">
-                                No credit card required
-                            </span>
-                        </div>
-                    </div>
                 </AnimationContainer>
             </MaxWidthWrapper>
 
@@ -197,12 +184,12 @@ const HomePage = async () => {
             <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
-                        <MagicBadge title="Our Customers" />
+                        <MagicBadge title="فروشگاه‌ها" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            What our users are saying
+                            درد خرید و فروش مجدد
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Here&apos;s what some of our users have to say about Linkify.
+                            عطر و نقره و کالاهایی که قیمت خریدشان با دلار و تورم تکان می‌خورد.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -225,7 +212,7 @@ const HomePage = async () => {
                                                 {review.review}
                                             </p>
                                         </CardContent>
-                                        <CardFooter className="w-full space-x-1 mt-auto">
+                                        <CardFooter className="w-full gap-1 mt-auto">
                                             {Array.from({ length: review.rating }, (_, i) => (
                                                 <StarIcon key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
                                             ))}
@@ -253,7 +240,7 @@ const HomePage = async () => {
                                                 {review.review}
                                             </p>
                                         </CardContent>
-                                        <CardFooter className="w-full space-x-1 mt-auto">
+                                        <CardFooter className="w-full gap-1 mt-auto">
                                             {Array.from({ length: review.rating }, (_, i) => (
                                                 <StarIcon key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
                                             ))}
@@ -281,7 +268,7 @@ const HomePage = async () => {
                                                 {review.review}
                                             </p>
                                         </CardContent>
-                                        <CardFooter className="w-full space-x-1 mt-auto">
+                                        <CardFooter className="w-full gap-1 mt-auto">
                                             {Array.from({ length: review.rating }, (_, i) => (
                                                 <StarIcon key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
                                             ))}
@@ -300,15 +287,17 @@ const HomePage = async () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                                Step into the future of link management
+                                بفهمید ضرر می‌دهید یا از رقبا گران‌ترید
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                                Experience the cutting-edge solution that transforms how you handle your links. Elevate your online presence with our next-gen platform.
+                                بعد از روی هزینه‌های واقعی‌تان یک قیمت امن بگیرید.
                             </p>
                             <div className="mt-6">
-                                <Button>
-                                    Get started for free
-                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                <Button asChild>
+                                    <Link href="/pricing">
+                                        شروع
+                                        <ArrowLeftIcon className="w-4 h-4 ms-2" />
+                                    </Link>
                                 </Button>
                             </div>
                         </div>

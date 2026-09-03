@@ -4,7 +4,7 @@ import { APP_DOMAIN, APP_HOSTNAMES, APP_NAME } from "./constants/site";
 import { DEFAULT_AVATAR_URL, PAGINATION_LIMIT, COMPANIES, PROCESS } from "./constants/misc";
 import { PLANS, PRICING_FEATURES, WORKSPACE_LIMIT } from "./constants/pricing";
 import { NAV_LINKS } from "./constants/nav-links";
-import { aeonik, inter } from "./constants/fonts";
+import { aeonik, inter, vazirmatn } from "./constants/fonts";
 
 // functions
 import { cn } from "./functions/cn";
@@ -30,6 +30,7 @@ export {
     PROCESS,
     aeonik,
     inter,
+    vazirmatn,
 
     // functions
     cn,
