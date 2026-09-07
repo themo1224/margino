@@ -18,7 +18,7 @@ const HelpPage = () => {
                         سوال‌های رایج
                     </h1>
                     <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                        اگر جوابتان این‌جا نیست، از صفحه قیمت‌ها شروع کنید؛ پلن‌ها به‌زودی اعلام می‌شود.
+                        اگر جوابتان این‌جا نیست، از صفحه قیمت‌ها شروع کنید. مبلغ تومان هنوز قفل نشده.
                     </p>
                 </div>
             </AnimationContainer>

@@ -1,7 +1,7 @@
 import { Providers } from "@/components";
 import { Toaster } from "@/components/ui/sonner";
 import "@/styles/globals.css";
-import { aeonik, cn, generateMetadata, inter, vazirmatn } from "@/utils";
+import { aeonik, cn, estedad, generateMetadata, inter, vazirmatn } from "@/utils";
 
 export const metadata = generateMetadata();
 
@@ -16,6 +16,7 @@ export default function RootLayout({
                 className={cn(
                     "min-h-screen bg-background text-foreground antialiased !font-default overflow-x-hidden",
                     vazirmatn.variable,
+                    estedad.variable,
                     aeonik.variable,
                     inter.variable,
                 )}

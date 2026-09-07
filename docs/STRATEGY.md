@@ -57,9 +57,18 @@ _Why it serves the approach:_ Short-path revenue and the right first customers.
 - Restaurant menus, unique game accounts, and other non-SKU categories as first customers
 - Influencer discovery platform
 - Positioning ourselves as a WordPress plugin vendor
+- Selling a one-time Zhaket/RTL plugin that unlocks the full product forever
 
 ## Marketing
 
 **One-liner:** Know if you’re already losing money — or priced above rivals — then get a safe price from your real costs.
 
 **Key message:** We are a pricing product for Iranian buy-and-resell shops. WordPress users get a plugin as the connector today; Instagram and API are coming soon. Sell on our site and Zhaket/RTL; use Instagram to find shops, not as the product definition.
+
+## Pricing
+
+We sell a **SaaS subscription** (monthly / yearly). WooCommerce is a connector inside the plan, not a separate product. Zhaket/RTL may sell access for WordPress users but must not be a cheap one-time plugin that replaces the subscription (no forever access to the engine + rival prices). Yearly = about 10 months (2 months free). Exact toman amounts are not locked yet; Starter is the cheap door, Pro is ~2–3× Starter and is the plan we push.
+
+- **پایه (Starter)** — Cost profile, recommended price, rival prices (limited products / slower refresh), alerts, WooCommerce connector. Instagram + API stay coming soon. For one shop, few SKUs.
+- **حرفه‌ای (Pro)** — Everything in Starter, more products, faster rival refresh, stronger alerts (below cost / above rivals), optional WooCommerce auto-apply. For perfume / accessories shops with ~100–500 orders/month. **Primary paid plan.**
+- **فروشگاه‌ها (Business)** — Several shops / more SKUs, priority support, API when it ships.

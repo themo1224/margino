@@ -31,15 +31,16 @@ const HomePage = () => {
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            بفهمید ضرر می‌دهید یا از رقبا{" "}
-                            <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                گران‌ترید
+                            حتی اگر حواس‌ات نباشد،{" "}
+                            <span className="text-transparent bg-gradient-to-r from-brand to-gold bg-clip-text inline-block">
+                                ضرر نمی‌کنی
                             </span>
+                            .
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                            بدانید الان ضرر می‌دهید یا از رقبا گران‌ترید؛
+                            قیمت کالاهایت را با هزینه‌ات و قیمت روز به‌روز نگه می‌داریم
                             <br className="hidden md:block" />
-                            <span className="hidden md:block">بعد از روی هزینه‌های واقعی‌تان یک قیمت امن بگیرید.</span>
+                            <span className="hidden md:block">و قیمت رقبا را هم رصد می‌کنیم.</span>
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
@@ -168,10 +169,10 @@ const HomePage = () => {
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="قیمت‌ها" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            خرید از سایت، ژاکت و RTL
+                            پلنی که با فروشگاهتان جور درمی‌آید
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            محصول را همین‌جا و از ژاکت و RTL برای کاربران وردپرس می‌فروشیم. جزئیات پلن‌ها به‌زودی.
+                            از پایه شروع کنید، یا حرفه‌ای را برای فروش روزانه انتخاب کنید. اتصال ووکامرس بخشی از اشتراک است؛ پرداخت سالانه دو ماه رایگان دارد.
                         </p>
                     </div>
                 </AnimationContainer>
