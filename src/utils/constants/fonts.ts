@@ -27,6 +27,19 @@ export const aeonik = localFont({
     variable: "--font-aeonik",
 });
 
+/** Estedad Mad (display) — Farsi-digits cut for FA pricing UI */
+export const estedad = localFont({
+    src: [
+        {
+            path: "../../../public/fonts/Estedad-Mad-FD.woff2",
+            weight: "700",
+            style: "normal",
+        },
+    ],
+    variable: "--font-estedad",
+    display: "swap",
+});
+
 export const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",

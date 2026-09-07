@@ -13,8 +13,18 @@
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    /* Brand palette: #237227, #519A66, #FFAA00, #FFD786 */
+    --brand: 123 53% 29%;
+    --brand-foreground: 0 0% 98%;
+    --brand-muted: 137 31% 46%;
+    --brand-muted-foreground: 0 0% 98%;
+    --accent-gold: 40 100% 50%;
+    --accent-gold-foreground: 0 0% 9%;
+    --accent-gold-soft: 40 100% 76%;
+    --accent-gold-soft-foreground: 0 0% 9%;
+
+    --primary: 123 53% 29%;
+    --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -30,7 +40,7 @@
 
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --ring: 40 100% 50%;
 
     --radius: 0.5rem;
   }
@@ -45,7 +55,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 0 0% 9%;
+    --brand: 123 53% 29%;
+    --brand-foreground: 0 0% 98%;
+    --brand-muted: 137 31% 46%;
+    --brand-muted-foreground: 0 0% 98%;
+    --accent-gold: 40 100% 45%;
+    --accent-gold-foreground: 0 0% 9%;
+    --accent-gold-soft: 40 100% 76%;
+    --accent-gold-soft-foreground: 0 0% 9%;
+
+    --primary: 123 53% 29%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96.1%;
@@ -68,23 +87,23 @@
 
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --ring: 123 53% 29%;
   }
 }
 
 ::selection {
-  background-color: rgba(168, 85, 247, 0.2);
+  background-color: hsl(var(--accent-gold-soft) / 0.35);
   color: hsl(var(--foreground));
 }
 
 html, body {
-  font-family: "Inter", sans-serif !important;
+  font-family: var(--font-vazirmatn), ui-sans-serif, system-ui, sans-serif;
 }
 
 .dumy {
   color: hsl(0 0% 98%);
   color: rgb(38, 38, 38)
-    /* @apply to-purple-500 */
+    /* @apply to-brand */
 }
 
 ::-webkit-scrollbar {
@@ -102,9 +121,17 @@ html, body {
 }
 
 .gradient {
-  background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg);
+  background: conic-gradient(
+    from 230.29deg at 51.63% 52.16%,
+    hsl(123 53% 29%) 0deg,
+    hsl(137 31% 46%) 67.5deg,
+    hsl(40 100% 50%) 198.75deg,
+    hsl(123 53% 35%) 251.25deg,
+    hsl(40 100% 76%) 301.88deg,
+    hsl(137 31% 40%) 360deg
+  );
 }
 
 .not-found {
-  box-shadow: rgba(150, 18, 226, 0.3) 5px 5px;
+  box-shadow: hsl(var(--brand) / 0.35) 5px 5px;
 }

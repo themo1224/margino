@@ -105,12 +105,12 @@ const PlanCard = ({
             dir="rtl"
             className={cn(
                 "flex flex-col w-full border-border rounded-xl text-start",
-                plan.highlighted && "border-2 border-purple-500"
+                plan.highlighted && "border-2 border-brand"
             )}
         >
             <CardHeader className={cn(
                 "border-b border-border text-start",
-                plan.highlighted ? "bg-purple-500/[0.07]" : "bg-foreground/[0.03]"
+                plan.highlighted ? "bg-brand/[0.07]" : "bg-foreground/[0.03]"
             )}>
                 <CardTitle className={cn(!plan.highlighted && "text-muted-foreground", "text-lg font-medium text-start")}>
                     {plan.name}
@@ -130,7 +130,7 @@ const PlanCard = ({
             <CardContent className="pt-6 space-y-4">
                 {plan.features.map((feature, index) => (
                     <div key={index} className="flex flex-row items-start gap-2 text-start">
-                        <CheckCircleIcon className="text-purple-500 w-4 h-4 mt-0.5 shrink-0" />
+                        <CheckCircleIcon className="text-brand w-4 h-4 mt-0.5 shrink-0" />
                         <p className="text-start leading-relaxed">
                             {feature.text}
                         </p>
@@ -141,7 +141,7 @@ const PlanCard = ({
                 <Link
                     href={plan.btn.href}
                     style={{ width: "100%" }}
-                    className={buttonVariants({ className: plan.highlighted && "bg-purple-500 hover:bg-purple-500/80 text-white" })}
+                    className={buttonVariants({ className: plan.highlighted && "bg-brand hover:bg-brand-muted text-brand-foreground" })}
                 >
                     {plan.btn.text}
                 </Link>

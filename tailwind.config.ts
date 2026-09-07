@@ -28,6 +28,18 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        brand: {
+          DEFAULT: "hsl(var(--brand))",
+          foreground: "hsl(var(--brand-foreground))",
+          muted: "hsl(var(--brand-muted))",
+          "muted-foreground": "hsl(var(--brand-muted-foreground))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--accent-gold))",
+          foreground: "hsl(var(--accent-gold-foreground))",
+          soft: "hsl(var(--accent-gold-soft))",
+          "soft-foreground": "hsl(var(--accent-gold-soft-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -71,7 +83,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        "heading": ["var(--font-vazirmatn)", "var(--font-aeonik)"],
+        "heading": ["var(--font-estedad)", "var(--font-vazirmatn)", "var(--font-aeonik)"],
         "default": ["var(--font-vazirmatn)", "var(--font-inter)"],
       },
       keyframes: {

@@ -32,7 +32,7 @@ const HomePage = () => {
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
                             حتی اگر حواس‌ات نباشد،{" "}
-                            <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-block">
+                            <span className="text-transparent bg-gradient-to-r from-brand to-gold bg-clip-text inline-block">
                                 ضرر نمی‌کنی
                             </span>
                             .
